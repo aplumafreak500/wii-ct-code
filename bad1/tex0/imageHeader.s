@@ -1,13 +1,13 @@
-.int 0x54455830
-.int _fileEnd
-.int 0x3
-.int 0xFFAFD500
-.int _bad1End
-.int 0x0008770C
-.int 0x0
-.int 0x026001C8
-.int 0xe
-.int 0x1
+.int 0x54455830 # TEX0
+.int 0x00087650 # File length
+.int 0x3 # Version
+.int 0x0 # Padding
+.int 0x000658c0 # Image Data
+.int 0x00087644 # Offset to name header
+.int 0x0 # Padding
+.int 0x026001C8 # Dimensions - 608x456
+.int 0xe # Image format CMPR
+.int 0x1 # Level of detail
 
 # Pad
 .rept 6

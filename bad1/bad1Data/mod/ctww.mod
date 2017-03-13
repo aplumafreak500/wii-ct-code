@@ -10,6 +10,7 @@
 /* Three patches to change the region number to the constant ONLINE_REGION
  * which is defined in the config files.
  */
+ /* Commented out to allow this to be defined in StaticR.rel itself. ~APLumaFreak500 */
 MOD_REL(
     mod_online_region_1,
     mod_online_region_1_addr,
@@ -26,12 +27,14 @@ MOD_REL(
         li r4,ONLINE_REGION;
 )
 
-/* This mod alters the online time limit to 0x53020 = 340000ms */
+
+
+/* This mod alters the online time limit to 0x50910 = 330000ms */
 MOD_REL(
     mod_time_limit,
     mod_time_limit_addr,
         lis r3,0x5;
-        addi r4,r3,0x3020;
+        addi r4,r3,0x0910;
 )
 
 #if ENABLE_CTS == 1
