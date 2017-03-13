@@ -11,6 +11,7 @@
  * which is defined in the config files.
  */
  /* Commented out to allow this to be defined in StaticR.rel itself. ~APLumaFreak500 */
+/*
 MOD_REL(
     mod_online_region_1,
     mod_online_region_1_addr,
@@ -27,7 +28,7 @@ MOD_REL(
         li r4,ONLINE_REGION;
 )
 
-
+*/
 
 /* This mod alters the online time limit to 0x50910 = 330000ms */
 MOD_REL(
